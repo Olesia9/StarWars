@@ -1,0 +1,194 @@
+<!--<p>planets works!</p>-->
+<!--<h2>Time:</h2>-->
+<!--&lt;!&ndash;<p *ngFor="let item of items; let i = index;&ndash;&gt;-->
+<!--&lt;!&ndash;let first = first; let last = last let even = even; let odd= odd" [ngClass]="{first:first, last:last, even:even, odd:odd}">&ndash;&gt;-->
+<!--&lt;!&ndash;  {{i+1}} {{item}}</p>&ndash;&gt;-->
+
+<!--<ng-template *ngIf="loggedIn; then loggedIn; else loggedOut">-->
+<!--</ng-template>-->
+<!--<ng-template #loggedIn>-->
+<!--  Logged-->
+<!--</ng-template>-->
+<!--<ng-template #loggedOut>-->
+<!--  Login please-->
+<!--</ng-template>-->
+
+<!--<p >Text</p>-->
+
+<!--&lt;!&ndash;<button (click)="myEvent($event);">Event</button>&ndash;&gt;-->
+
+
+
+
+<div class="containers">
+  <div class="card">
+    <a id="texti" class="btn-card" routerLink="/about">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/Tatooine.jpg" alt="">
+
+    <div id="card-description" class="card-description">
+      <h3>Диаметр: <span id="diameter_null"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_null"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_null"></span></h3>
+      <h3>Гравитация: <span id="gravity_null"></span></h3>
+      <h3>Популяций: <span id="population_null"></span></h3>
+      <h3>Климат: <span id="climate_null"></span></h3>
+      <h3>Рельеф: <span id="terrain_null"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_null"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedOne" id="card-one">
+    <a id="texti_one" class="btn-card" routerLink="/about_two">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/alderaan.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_one"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_one"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_one"></span></h3>
+      <h3>Гравитация: <span id="gravity_one"></span></h3>
+      <h3>Популяций: <span id="population_one"></span></h3>
+      <h3>Климат: <span id="climate_one"></span></h3>
+      <h3>Рельеф: <span id="terrain_one"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_one"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedTwo">
+    <a id="texti_two" class="btn-card" routerLink="/about_yavin">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/yavin.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_two"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_two"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_two"></span></h3>
+      <h3>Гравитация: <span id="gravity_two"></span></h3>
+      <h3>Популяций: <span id="population_two"></span></h3>
+      <h3>Климат: <span id="climate_two"></span></h3>
+      <h3>Рельеф: <span id="terrain_two"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_two"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedThree">
+    <a id="texti_three" class="btn-card" routerLink="/about_hoth">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/hoth.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_three"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_three"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_three"></span></h3>
+      <h3>Гравитация: <span id="gravity_three"></span></h3>
+      <h3>Популяций: <span id="population_three"></span></h3>
+      <h3>Климат: <span id="climate_three"></span></h3>
+      <h3>Рельеф: <span id="terrain_three"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_three"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedFour">
+    <a id="texti_four" class="btn-card" routerLink="/about_dagobah">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/dagobah_2.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_four"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_four"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_four"></span></h3>
+      <h3>Гравитация: <span id="gravity_four"></span></h3>
+      <h3>Популяций: <span id="population_four"></span></h3>
+      <h3>Климат: <span id="climate_four"></span></h3>
+      <h3>Рельеф: <span id="terrain_four"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_four"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedFive">
+    <a id="texti_five" class="btn-card" routerLink="/about_bespin">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/bespin.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_five"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_five"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_five"></span></h3>
+      <h3>Гравитация: <span id="gravity_five"></span></h3>
+      <h3>Популяций: <span id="population_five"></span></h3>
+      <h3>Климат: <span id="climate_five"></span></h3>
+      <h3>Рельеф: <span id="terrain_five"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_five"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedSix">
+    <a id="texti_six" class="btn-card" routerLink="/about_endor">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/endor.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_six"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_six"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_six"></span></h3>
+      <h3>Гравитация: <span id="gravity_six"></span></h3>
+      <h3>Популяций: <span id="population_six"></span></h3>
+      <h3>Климат: <span id="climate_six"></span></h3>
+      <h3>Рельеф: <span id="terrain_six"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_six"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedSeven">
+    <a id="texti_seven" class="btn-card" routerLink="/about_naboo">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/naboo.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_seven"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_seven"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_seven"></span></h3>
+      <h3>Гравитация: <span id="gravity_seven"></span></h3>
+      <h3>Популяций: <span id="population_seven"></span></h3>
+      <h3>Климат: <span id="climate_seven"></span></h3>
+      <h3>Рельеф: <span id="terrain_seven"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_seven"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedEight">
+    <a id="texti_eight" class="btn-card" routerLink="/about_coruscant">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/coruscant.webp" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_eight"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_eight"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_eight"></span></h3>
+      <h3>Гравитация: <span id="gravity_eight"></span></h3>
+      <h3>Популяций: <span id="population_eight"></span></h3>
+      <h3>Климат: <span id="climate_eight"></span></h3>
+      <h3>Рельеф: <span id="terrain_eight"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_eight"></span>%</h3>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="isCollapsedNine">
+    <a id="texti_nine" class="btn-card" routerLink="/about_kamino">
+      Tatoe
+    </a>
+    <img class="card-img" src="../../assets/img/kamino.jpg" alt="">
+    <div class="card-description">
+      <h3>Диаметр: <span id="diameter_nine"></span></h3>
+      <h3>Часов в сутках: <span id="rotation_period_nine"></span></h3>
+      <h3>Дней в году: <span id="orbital_period_nine"></span></h3>
+      <h3>Гравитация: <span id="gravity_nine"></span></h3>
+      <h3>Популяций: <span id="population_nine"></span></h3>
+      <h3>Климат: <span id="climate_nine"></span></h3>
+      <h3>Рельеф: <span id="terrain_nine"></span></h3>
+      <h3>Естесственные воды: <span id="surface_water_nine"></span>%</h3>
+    </div>
+  </div>
+</div>
